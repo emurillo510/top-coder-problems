@@ -56,3 +56,16 @@ existing_names = ["Bart4", "Bart5", "Bart6", "Bart7", "Bart8", "Bart9", "Bart10"
 input_name = "Bart"
 
 user_name.new_member(existing_names, input_name)
+
+
+# Notes:
+
+# if vs while
+   # 1] Started with if statement checking to see if existing name is in list.
+   # 2] Noticed that if statement turned to a recursive call.
+   # 3] Needed to change if to while statement
+# suggest_name algorithm
+   # 1] generating new name was a bit harder than excepted.
+   # 2] this was because of lack of knowledge of regex; had to look it up.
+   # 3] using regex extracted string and increment and place it back to string.
+# overall optimization: is it possible to clean up suggest_name implementation. 
