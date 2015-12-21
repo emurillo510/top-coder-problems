@@ -2,7 +2,9 @@ Problem Statement for PassingGrade
 
 Problem Statement
     	
-You are studying for the final exam in a tough course, and want to know how many points you need to score on the final to pass the course. You know how many points you earned on each assignment (pointsEarned), how many points were possible on each assignment (pointsPossible), and how many points are possible on the final exam (finalExam). You need to earn a minimum of 65% of the total possible points to pass the course. Assume your score on the final exam will be an integral number of points between 0 and finalExam, inclusive. Return the number of points you need to score on the final to pass the course, or -1 if it is impossible for you to pass the course.
+You are studying for the final exam in a tough course, and want to know how many points you need to score on the final to pass the course. You know how many points you earned on each assignment (pointsEarned), how many points were possible on each assignment (pointsPossible), and how many points are possible on the final exam (finalExam). 
+
+You need to earn a minimum of 65% of the total possible points to pass the course. Assume your score on the final exam will be an integral number of points between 0 and finalExam, inclusive. Return the number of points you need to score on the final to pass the course, or -1 if it is impossible for you to pass the course.
 
  
 Definition
