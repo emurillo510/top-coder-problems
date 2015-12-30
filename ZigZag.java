@@ -26,8 +26,8 @@ public class ZigZag{
     leaving the remaining elements in their original order.
 
     */
-    
-	public static int longestZigZag2(int[] A){
+
+	public static int longestZigZag(int[] A){
 
       /* initialization */
 	  int longestSequence = 1;
