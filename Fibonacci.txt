@@ -1,0 +1,63 @@
+The Fibonacci numbers were originally defined by the Italian mathematician Fibonacci in the thirtheenth century to model the growth of the rabbit popluations.
+
+Rabbits breed, well like rabbits. Fibonacci surmised that the number of pairs of rabbits born in a given year is equal to the number of pairs of rabbits born in each of the two previous years, starting from one pair of rabbits in the first year. To count th enumber of rabbits born in the nth year, he defined the recurrence relation:
+
+Fn = Fn-1 + Fn-2
+
+with base cases F0 = 0 and F1 = 1. Thus, F2 = 1, F3 = 2, and the series continues 
+{3,5,8,13,21,34,55,89,144,...}.
+
+As it turns out, Fiboacci's formula didn't do a very good job of counting rabbits, but it does have a host of interesting properties.
+
+Since they are defined by a recursive formula, it is easy to write a recursive program to compute the nth Fibonacci number. A recursive function algorithm written in C looks like this:
+
+long fib_r(int n){
+	if(n==0) return(0);
+	if(n==1) return(1);
+
+	return(fib_r(n-1) + fib_r(n-2));	
+}
+
+Fibonacci Recursion Tree
+
+f(6)
+   f(5)
+     f(4)
+       f(3)
+         f(2)
+           f(1)
+           f(0)
+         f(1)
+       f(2)
+         f(1)
+         f(0)
+     f(3)
+       f(2)
+         f(1)
+         f(0)
+       f(1)
+   f(4)
+      f(3)
+        f(2)
+          f(1)
+          f(0)
+        f(1)
+      f(2)
+        f(1)
+        f(0)
+
+Fibonacci Recursion Tree with Memoization
+
+f(6)
+   f(5)
+     f(4)
+       f(3)
+         f(2)
+           f(1)
+           f(0)
+
+
+1] fibonacci with recursion
+2] fibonacci memoized
+3] fibonacci dp
+4] fibonacci no storage
