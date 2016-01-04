@@ -79,8 +79,8 @@ public class CCipher{
         	currentCharAscii = (int) input.charAt(i) - shift;
 
         	if(currentCharAscii < (int) 'A'){
-                currentCharAscii = currentCharAscii + 26;
-                currentChar = (char) currentCharAscii;
+            currentCharAscii = currentCharAscii + 26;
+            currentChar = (char) currentCharAscii;
         	} else {
         		currentChar = (char) currentCharAscii;
         	}
