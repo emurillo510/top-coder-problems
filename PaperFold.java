@@ -144,22 +144,15 @@ public class PaperFold{
 
     if(paperWidth == 0 || paperLength == 0) return -1;
 
-    if(paperWidth <= boxWidth && paperLength <= boxLength){
+    boolean original = paperWidth <= boxWidth && paperLength <= boxLength;
+    boolean rotated = paperLength <= boxWidth && paperWidth <= boxLength;
+    if(original || rotated){
 
-       System.out.println("case 1: original");
+       System.out.println("case 1: original or rotated");
        System.out.println("paperWidth: " + paperWidth);
        System.out.println("paperLength: " + paperLength);
 
        return numFolds;
-
-    }else if(paperLength <= boxWidth && paperWidth <= boxLength){
-
-      System.out.println("case 2: rotated ");
-      System.out.println("paperWidth: " + paperWidth);
-      System.out.println("paperLength: " + paperLength);
-
-      return numFolds;
-
     } else if(paperWidth > boxWidth){
     
        paper[0] = paperWidth / 2;
